@@ -3,12 +3,12 @@ import { getAuth } from 'firebase/auth'
 import { getStorage } from 'firebase/storage'
 import { initializeApp } from "firebase/app";
 const firebaseConfig = {
-  apiKey: "AIzaSyDLwVLQC4w8P_t4MzGAiq9sOF6FKd4jgGs",
-  authDomain: "lyeana-blog-ff072.firebaseapp.com",
-  projectId: "lyeana-blog-ff072",
-  storageBucket: "lyeana-blog-ff072.appspot.com",
-  messagingSenderId: "1058314155954",
-  appId: "1:1058314155954:web:2c8cd492739bedea8d16ab"
+  apiKey: process.env.NEXT_PUBLIC_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_MESSANGING_ID,
+  appId: process.env.NEXT_PUBLIC_APP_ID,
 };
 
 // Initialize Firebase
